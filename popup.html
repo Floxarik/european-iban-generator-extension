@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random IBAN Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      width: 360px;
+    }
+    select, button {
+      margin-top: 10px;
+      padding: 5px;
+    }
+    #iban {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      width: 100%;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="font-size: 20px">Random IBAN Generator</h1>
+  <label for="country">Select Country:</label>
+  <select id="country">
+    <option value="PL">Poland</option>
+    <option value="AT">Austria</option>
+    <option value="DE">Germany</option>
+    <option value="BE">Belgium</option>
+    <option value="NL">Netherlands</option>
+    <option value="CZ">Czech Republic</option>
+    <option value="FR">France</option>
+    <option value="HU">Hungary</option>
+    <option value="LU">Luxembourg</option>
+    <option value="CH">Switzerland</option>
+    <option value="SK">Slovakia</option>
+  </select>
+  <button id="generate">Generate IBAN</button>
+  <div id="iban"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

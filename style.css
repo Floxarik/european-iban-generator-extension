@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 200px;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  label, select, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    word-break: break-all;
+    text-align: center;
+    font-weight: bold;
+  }
+  
