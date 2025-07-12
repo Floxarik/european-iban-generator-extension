@@ -10,6 +10,8 @@ A Chrome extension that generates valid IBANs for all European countries. Perfec
 - **Country Memory**: Remembers your last selected country
 - **Keyboard Shortcuts**: Use Ctrl+Enter to generate IBAN quickly
 - **Valid IBANs**: All generated IBANs follow proper validation algorithms
+- **Offline Operation**: Works completely offline with no external dependencies
+- **Privacy Focused**: No data collection, all processing local
 
 ## ⚠️ Important Disclaimer
 
@@ -31,19 +33,23 @@ The extension supports all European countries including:
 
 ## Installation
 
+### For Development/Testing:
 1. Download or clone this repository
 2. Open Chrome and go to `chrome://extensions/`
 3. Enable "Developer mode" in the top right
 4. Click "Load unpacked" and select the extension folder
 5. The extension icon will appear in your toolbar
 
+### For Production:
+The extension will be available on the Chrome Web Store once published.
+
 ## Usage
 
 1. Click the extension icon in your browser toolbar
 2. Select a European country from the dropdown
 3. Click "Generate IBAN" or press Ctrl+Enter
-4. The IBAN will be generated and automatically copied to your clipboard
-5. Use the "Copy IBAN" button to copy again if needed
+4. The IBAN will be generated and displayed
+5. Click the "Copy IBAN" button to copy to your clipboard
 
 ## Technical Details
 
@@ -51,6 +57,8 @@ The extension supports all European countries including:
 - **Check Digit Calculation**: Uses the MOD-97 algorithm for proper validation
 - **BBAN Patterns**: Each country uses its specific BBAN (Basic Bank Account Number) format
 - **Storage**: Uses Chrome's sync storage to remember user preferences
+- **Offline Operation**: Works completely offline with no external dependencies
+- **Privacy**: No data collection, all processing local
 
 ## File Structure
 
@@ -75,7 +83,17 @@ The extension is built with:
 - **HTML5**: Semantic markup
 - **CSS3**: Modern styling with gradients and animations
 - **JavaScript**: ES6+ features and Chrome Extension APIs
-- **Font Awesome**: Icons for better UX (loaded from CDN)
+- **Font Awesome**: Icons for better UX (local files)
+
+## Chrome Web Store Compliance
+
+This extension is fully compliant with Chrome Web Store requirements:
+- ✅ No external CDN dependencies
+- ✅ Local Font Awesome files
+- ✅ Content Security Policy implemented
+- ✅ Privacy policy included
+- ✅ No inline scripts or styles
+- ✅ Works completely offline
 
 ## Contributing
 
