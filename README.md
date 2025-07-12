@@ -99,28 +99,34 @@ Once published, the extension will be available via the official Chrome Web Stor
 
 ## Project Structure
 
-iban-generator-extension/
-├── manifest.json              # Chrome extension configuration
-├── popup.html                 # Popup interface layout
-├── popup.js                   # Core JS logic and IBAN generation
-├── style.css                  # UI styles and animations
-├── privacy.html               # Privacy policy
-├── LICENSE                    # Open-source license
-├── README.md                  # This file
-├── .gitignore                 # Git ignore rules
-├── assets/                    # Preview GIF and screenshots
+<pre><code> iban-generator-extension/
+├── manifest.json           # Chrome extension configuration
+├── popup.html              # Popup interface layout
+├── popup.js                # Core JS logic and IBAN generation
+├── style.css               # UI styles and animations
+├── privacy.html            # Privacy policy
+├── LICENSE                 # Open-source license
+├── README.md               # This file
+├── .gitignore              # Git ignore rules
+
+assets/                  # Preview GIF and screenshots
 │   ├── iban-generator-preview.gif
-│   ├── screenshot-1.png
-│   ├── screenshot-2.png
-│   └── screenshot-3.png
-├── icons/                     # Extension icons for Chrome Web Store
+│   ├── screenshot-1.png    # Full popup window
+│   ├── screenshot-2.png    # Generated IBAN
+│   └── screenshot-3.png    # After copying IBAN
+
+icons/                   # Extension icons for Chrome Web Store
 │   ├── icon16.png
 │   ├── icon32.png
 │   ├── icon48.png
 │   └── icon128.png
-└── fontawesome/               # Local Font Awesome (self-hosted)
-├── css/all.min.css
-└── webfonts/
+
+fontawesome/             # Local Font Awesome (self-hosted)
+│   ├── css/
+│   │   └── all.min.css
+│   └── webfonts/
+</code></pre>
+
 
 ---
 
