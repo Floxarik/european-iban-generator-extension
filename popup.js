@@ -103,7 +103,7 @@ function generateIBAN() {
     const iban = generateRandomIBAN(country);
     ibanDisplay.textContent = iban;
     ibanDisplay.classList.add('generated');
-    copyBtn.style.display = 'block';
+    copyBtn.classList.remove('hidden');
     
     // Show success animation
     generateBtn.classList.add('success');
@@ -112,7 +112,7 @@ function generateIBAN() {
   } catch (error) {
     ibanDisplay.textContent = 'Error generating IBAN';
     ibanDisplay.classList.add('error');
-    copyBtn.style.display = 'none';
+    copyBtn.classList.add('hidden');
   }
 }
 

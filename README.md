@@ -60,8 +60,11 @@ iban-generator-extension/
 ├── popup.html            # Main popup interface
 ├── popup.js              # Core functionality and country data
 ├── style.css             # Modern styling and animations
+├── privacy.html          # Privacy policy page
 ├── icons/                # Extension icons (16px, 32px, 48px, 128px)
-├── privacy-policy.md     # Privacy policy for Web Store
+├── fontawesome/          # Local Font Awesome files
+│   ├── css/all.min.css   # Font Awesome styles
+│   └── webfonts/         # Font Awesome fonts
 ├── .gitignore           # Git ignore rules
 └── README.md            # This file
 ```
