@@ -1,6 +1,6 @@
-# European IBAN Generator Extension
+# Random European IBAN Generator Extension
 
-A Chrome extension that generates valid IBANs for all European countries. Perfect for QA testing, development, and educational purposes.
+A Chrome extension that randomly generates valid IBANs for all European countries. Perfect for QA testing, development, and educational purposes.
 
 ![Preview](assets/iban-generator-preview.gif)
 
@@ -51,11 +51,11 @@ This extension is for testing and educational purposes only.
 
 The extension supports all European countries including:
 
-- Western Europe: France, Germany, Netherlands, Belgium, Luxembourg, Switzerland, Austria, Liechtenstein, Monaco  
-- Northern Europe: Denmark, Finland, Norway, Sweden, Iceland, Faroe Islands, Greenland  
-- Southern Europe: Italy, Spain, Portugal, Greece, Malta, Cyprus, San Marino, Vatican City  
-- Eastern Europe: Poland, Czech Republic, Slovakia, Hungary, Romania, Bulgaria, Croatia, Slovenia, Serbia, Montenegro, Bosnia and Herzegovina, North Macedonia, Albania, Moldova, Ukraine, Belarus  
-- British Isles: United Kingdom, Ireland  
+- Western Europe: France, Germany, Netherlands, Belgium, Luxembourg, Switzerland, Austria, Liechtenstein, Monaco
+- Northern Europe: Denmark, Finland, Norway, Sweden, Iceland, Faroe Islands, Greenland
+- Southern Europe: Italy, Spain, Portugal, Greece, Malta, Cyprus, San Marino, Vatican City
+- Eastern Europe: Poland, Czech Republic, Slovakia, Hungary, Romania, Bulgaria, Croatia, Slovenia, Serbia, Montenegro, Bosnia and Herzegovina, North Macedonia, Albania, Moldova, Ukraine, Belarus
+- British Isles: United Kingdom, Ireland
 - Others: Turkey, Gibraltar, Latvia, Lithuania, Estonia
 
 ---
@@ -64,10 +64,10 @@ The extension supports all European countries including:
 
 ### Development Version
 
-1. Clone or download this repository  
-2. Open Chrome and navigate to `chrome://extensions/`  
-3. Enable "Developer mode" in the top-right corner  
-4. Click "Load unpacked" and select the extension folder  
+1. Clone or download this repository
+2. Open Chrome and navigate to `chrome://extensions/`
+3. Enable "Developer mode" in the top-right corner
+4. Click "Load unpacked" and select the extension folder
 5. The extension icon will appear in your browser toolbar
 
 ### Chrome Web Store (Coming Soon)
@@ -78,21 +78,21 @@ Once published, the extension will be available via the official Chrome Web Stor
 
 ## Usage
 
-1. Click the extension icon in the Chrome toolbar  
-2. Select a European country from the dropdown list  
-3. Click "Generate IBAN" or press `Ctrl+Enter`  
-4. The generated IBAN will appear and be copied to your clipboard  
+1. Click the extension icon in the Chrome toolbar
+2. Select a European country from the dropdown list
+3. Click "Generate IBAN" or press `Ctrl+Enter`
+4. The generated IBAN will appear and be copied to your clipboard
 5. Click "Copy IBAN" to copy it again later if needed
 
 ---
 
 ## Technical Details
 
-- IBAN Validation: All generated IBANs comply with the ISO 13616 standard  
-- Check Digit Calculation: Uses MOD-97 algorithm  
-- Country-Specific BBAN: Each country uses its own BBAN structure  
-- Storage: Last selected country saved using Chrome sync storage  
-- Offline Operation: Works entirely in your browser, no internet needed  
+- IBAN Validation: All generated IBANs comply with the ISO 13616 standard
+- Check Digit Calculation: Uses MOD-97 algorithm
+- Country-Specific BBAN: Each country uses its own BBAN structure
+- Storage: Last selected country saved using Chrome sync storage
+- Offline Operation: Works entirely in your browser, no internet needed
 - Privacy: No analytics, no telemetry, no external calls
 
 ---
@@ -127,15 +127,14 @@ fontawesome/             # Local Font Awesome (self-hosted)
 │   └── webfonts/
 </code></pre>
 
-
 ---
 
 ## Development Stack
 
-- HTML5 – semantic and accessible markup  
-- CSS3 – responsive layout with gradients and animations  
-- JavaScript – modern ES6+ syntax  
-- Chrome Extension APIs – for clipboard and storage functionality  
+- HTML5 – semantic and accessible markup
+- CSS3 – responsive layout with gradients and animations
+- JavaScript – modern ES6+ syntax
+- Chrome Extension APIs – for clipboard and storage functionality
 - Font Awesome – bundled locally (no CDN usage)
 
 ---
@@ -144,10 +143,10 @@ fontawesome/             # Local Font Awesome (self-hosted)
 
 This extension follows all current requirements for Chrome Web Store publication:
 
-- No CDN dependencies – all libraries are hosted locally  
-- No inline styles or scripts – CSP-compliant structure  
-- Offline operation – no network calls  
-- Privacy-friendly – no tracking or third-party integrations  
+- No CDN dependencies – all libraries are hosted locally
+- No inline styles or scripts – CSP-compliant structure
+- Offline operation – no network calls
+- Privacy-friendly – no tracking or third-party integrations
 - Includes required privacy policy and license
 
 ---

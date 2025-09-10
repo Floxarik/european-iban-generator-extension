@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Random IBAN Generator</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="fontawesome/css/all.min.css">
-</head>
-<body>
-  <div class="container">
-    <header class="header">
-      <div class="logo">
-        <i class="fas fa-university"></i>
-        <h1>IBAN Generator</h1>
-      </div>
-      <p class="subtitle">Generate valid IBANs for European countries</p>
-      <p class="disclaimer">For testing and educational purposes only</p>
-    </header>
-
-    <main class="main-content">
-      <div class="form-group">
-        <label for="country" class="form-label">
-          <i class="fas fa-globe"></i>
-          Select Country
-        </label>
-        <div class="select-wrapper">
-          <select id="country" class="form-select">
-            <option value="">Loading countries...</option>
-          </select>
-          <i class="fas fa-chevron-down select-arrow"></i>
+  <head>
+    <title>Random IBAN Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <i class="fas fa-university"></i>
+          <h1>Random European IBAN Generator</h1>
         </div>
-      </div>
+        <p class="subtitle">
+          Generate random valid IBANs for European countries
+        </p>
+        <p class="disclaimer">For testing and educational purposes only</p>
+      </header>
 
-      <div class="button-group">
-        <button id="generate" class="btn btn-primary">
-          <i class="fas fa-magic"></i>
-          Generate IBAN
-        </button>
-        <button id="copy" class="btn btn-secondary hidden">
-          <i class="fas fa-copy"></i>
-          Copy IBAN
-        </button>
-      </div>
+      <main class="main-content">
+        <div class="form-group">
+          <label for="country" class="form-label">
+            <i class="fas fa-globe"></i>
+            Select Country
+          </label>
+          <div class="select-wrapper">
+            <select id="country" class="form-select">
+              <option value="">Loading countries...</option>
+            </select>
+            <i class="fas fa-chevron-down select-arrow"></i>
+          </div>
+        </div>
 
-      <div class="result-container">
-        <div id="iban" class="iban-display"></div>
-        <div class="status-message" id="status"></div>
-      </div>
-    </main>
+        <div class="button-group">
+          <button id="generate" class="btn btn-primary">
+            <i class="fas fa-magic"></i>
+            Generate IBAN
+          </button>
+          <button id="copy" class="btn btn-secondary hidden">
+            <i class="fas fa-copy"></i>
+            Copy IBAN
+          </button>
+        </div>
 
-    <footer class="footer">
-      <div class="shortcuts">
-        <span class="shortcut">
-          <kbd>Ctrl</kbd> + <kbd>Enter</kbd> Generate
-        </span>
-      </div>
-    </footer>
-  </div>
+        <div class="result-container">
+          <div id="iban" class="iban-display"></div>
+          <div class="status-message" id="status"></div>
+        </div>
+      </main>
 
-  <script src="popup.js"></script>
-</body>
+      <footer class="footer">
+        <div class="shortcuts">
+          <span class="shortcut">
+            <kbd>Ctrl</kbd> + <kbd>Enter</kbd> Generate
+          </span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
 </html>
