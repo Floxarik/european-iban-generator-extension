@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Random European IBAN Generator",
   "version": "1.1.0",
-  "description": "Random European IBAN Generator – generate valid IBANs for all 44 European countries. Works offline, for testing and educational purposes only.",
+  "description": "Generate valid IBANs for all 44 European countries. Works offline, for testing and educational purposes only.",
   "permissions": [
     "storage",
     "clipboardWrite"
